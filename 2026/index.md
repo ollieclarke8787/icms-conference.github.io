@@ -12,6 +12,4 @@ news: 2026
 
 ### Invited Speakers
 
-tba
-
-For more details, see the [Waterloo website](https://maths.dur.ac.uk/icms2024/ICMS2024.html).
+For more details, see the [Waterloo website](https://cargo.wlu.ca/ICMS2026).
