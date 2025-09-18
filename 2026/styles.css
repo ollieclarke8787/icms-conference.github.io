@@ -1,0 +1,133 @@
+:root {
+  --primary: #003366;
+  --accent: #007acc;
+  --background: #f9f9f9;
+  --text: #333;
+  --white: #fff;
+  --off-white: #ccc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: var(--background);
+  color: var(--text);
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  text-align: left;
+}
+
+ul, ol {
+  padding-left: 2rem;
+  font-size: 1.1rem;
+}
+
+header {
+  background: var(--primary);
+  color: var(--white);
+  padding: 1rem 0rem 2rem;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+a {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--off-white);
+  font-weight: bold;
+  text-decoration-thickness: 2px;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.7rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  color: var(--off-white);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+
+.hero {
+  color: var(--primary);
+  padding: 2rem 0rem 2rem;
+}
+
+h2 {
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+ 
+h3 {
+  font-size: 1.7rem;
+  padding-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  max-width: 700px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--primary);
+  color: var(--white);
+  margin-top: 3rem;
+}
+
+@media (max-width: 600px) {
+  header, .container {
+    padding: 0.8rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
