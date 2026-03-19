@@ -1,0 +1,8 @@
+
+Title: Eigensolvers for polynomial roots and tensor decomposition 
+ 
+Authors: Enrica Barrilli, Bernard Mourrain 
+
+Abstract:
+
+Computing eigenvalues and eigenvectors is at the heart of the solution of many non-linear problems. For instance, finding the roots of polynomial systems reduces to computing joint eigenvectors of operators of multiplication. Similarly, tensor decomposition can be performed via the joint diagonalisation of submatrices of the Catalecticant of the tensor. After recalling the theoretical foundation of this approach, we describe symbolic-numeric methods, for computing joint eigenvectors of commuting operators, including cases of multiple eigenvalues, as well as their implementation in the packages AlgebraicSolvers.jl, TensorDec.jl. Experiments illustrate the numerical behavior and performance of these techniques.

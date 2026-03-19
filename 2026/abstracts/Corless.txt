@@ -1,0 +1,8 @@
+
+Title: Hybrid Symbolic-Numeric Computing: A Personal View
+
+Speaker: Rob Corless
+
+Abstract:
+
+I survey some of the history of symbolic-numeric computation, with an admittedly personal bias.  Hybrid computation can mean using floating-point to compute an exact result; it can mean using arbitrary-precision or interval arithmetic to give a guaranteed result; it can mean using symbolic computation to provide a numerical result with good structured backward error. It can mean mixing tools from computer algebra (e.g. GCD, the characteristic polynomial, resultants) with problems that have imprecise input, with errors in the input data.  It can mean regularization in order to solve ill-conditioned or even ill-posed problems.  I will concentrate on symbolic-numeric computation of polynomials, and give some recent results and open problems.  This talk dedicated to the memory of Professor Hans J. Stetter.

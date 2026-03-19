@@ -1,0 +1,10 @@
+
+Title: Parallel Certification of Roots of Polynomial Systems
+
+Authors: David Johnson and Taylor Brysiewicz
+
+Abstract:
+
+In numerical algebraic geometry, systems of polynomial equations can be solved using homotopy continuation. Crucially, this is a numerical method and thus provides only approximate solutions to the given system. In order to prove theorems using approximate solutions, one requires certification methods. To this end, the fastest approach is called the Krawczyk method. It employs interval arithmetic to provide arbitrarily small bounding boxes around numerical solutions inside which there is guaranteed to be a unique solution to the given polynomial system. Performing this method on several approximate solutions of a system and checking that the bounding boxes are disjoint certifies that each approximate solution corresponds to a distinct root. An implementation of the Krawczyk method for the Julia package HomotopyContinuation.jl was given by Breiding, Rose and Timme in 2023.
+
+Prima facie, verifying the disjointness of all bounding boxes requires storing all solutions in memory at once. For very high degree polynomial systems, this can translate to tens of gigabytes of storage. We propose a preprocessing step which partitions the solution set into parts containing sufficiently few solutions without ever having to store all solutions in memory at once. This allows the Krawczyk method to run within available memory. In conjunction with memory considerations, each part may be processed independently on distinct cores, parallelizing this previously non-parallel algorithm.

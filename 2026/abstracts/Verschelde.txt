@@ -1,0 +1,10 @@
+
+Title: Newton's Method for Real Powered Series using PHCpack and phcpy
+
+Authors: Katie Kruzan and Jan Verschelde
+
+Abstract:
+
+Motivated by the need for a numerically robust path tracker for polyhedral homotopies, we consider a Laurent polynomial system where the coefficients are real powered series in the continuation parameter. Negative integers may appear in the exponents of a Laurent polynomial.A real powered series is a series where the powers are real numbers. Such series appear as the coefficients of a system of Laurent polynomials in a polyhedral homotopy.
+
+PHCpack is a free and open source software package to solve polynomial systems with polynomial homotopy continuation methods, and phcpy is its Python interface. A recent addition to PHCpack is a generalization of Newton's method to compute real powered series solutions for polyhedral homotopies.

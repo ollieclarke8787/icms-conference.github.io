@@ -1,0 +1,10 @@
+
+Title: Computer-assisted discovery and proofs of compatibility conditions for three projective cameras.
+
+Speaker: Anton Leykin
+
+Abstract:
+
+The theorems in the article "Multiprojective Geometry of Compatible Triples of Fundamental and Essential Matrices" by Duff, Korotynskiy, Leykin, and Pajdla were conjectured with the help of numerical and symbolic computations combining tools from numerical algebraic geometry, representation theory, and homological methods in commutative algebra. This talk focuses on the process of experimental discovery and the subsequent fully symbolic proofs, carried out with assistance from the Macaulay2 computer algebra system.
+
+We characterize the variety of compatible fundamental matrix triples by computing its multidegree and multihomogeneous vanishing ideal. One of our key new results is a simple set of quartic constraints vanishing on compatible fundamental matrix triples.These quartics are also significant in the setting of essential matrices: together with some previously known constraints, we show that they locally cut out the variety of compatible essential matrix triples.

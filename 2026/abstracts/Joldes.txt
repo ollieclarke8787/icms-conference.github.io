@@ -1,0 +1,9 @@
+
+Title: Mathematical Software for the Evaluation of Distribution Functions of Quadratic Forms of Gaussian Random Variables
+
+Authors: Denis Arzelier, Florent Bréhard, Mioara Joldes
+
+Abstract:
+
+We describe a mathematical software package for the fast and reliable 
+evaluation of the cumulative distribution function (cdf) of positive semidefinite quadratic forms in Gaussian random variables, equivalently characterized as a particular case of generalized noncentral chi-square distributions. Building on our previous theoretical work, the package implements several symbolic-numeric algorithms based on the closed-form modified Laplace transform of the cdf and its D-finite structure: a classical recurrence, a positivity-preserving recurrence that eliminates the cancellation phenomenon between coefficients alternating in sign, and a faster scheme combining transposed multipoint evaluation with FFT-based power-series exponentiation. The paper focuses on the software aspects of these developments: algorithm engineering, numerical robustness, precision management, truncation-order selection from explicit error bounds, and practical handling of difficult parameter regimes. We detail the implementation in Julia and Matlab, discuss the evaluation pipelines, and compare different operating modes for balancing reliability and speed of execution. Numerical experiments on benchmark instances show that the positivity-preserving implementation provides the best overall robustness, while the fast implementation opens the way to scalable high-dimensional computation. More broadly, the package demonstrates how holonomic and symbolic-numeric ideas can be integrated into practical, reusable mathematical software for dependable distribution-function evaluation.

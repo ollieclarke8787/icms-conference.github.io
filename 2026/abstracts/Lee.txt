@@ -1,0 +1,18 @@
+
+Title: Certifying algebraic structures via interval arithmetic
+
+Speaker: Kisun Lee
+
+Abstract:
+
+In this talk, we present recent advances and applications of certified homotopy path tracking using interval arithmetic.
+
+Although numerical methods such as homotopy continuation are powerful, standard floating-point tracking is susceptible to errors, such as path jumping, which may lead to incorrect conclusions. Certified homotopy tracking addresses this issue through a symbolic-numeric framework based on interval arithmetic, ensuring that the computation of solutions simultaneously provides a proof of their correctness.
+
+After introducing certified homotopy tracking as a general tool, we present two applications.
+
+First, we apply certified tracking to compute Galois/monodromy groups for parameterized systems. By constructing a "homotopy graph" in the parameter space and certifiably tracking solution paths along its edges, we rigorously compute monodromy permutations and groups.
+
+Our second application extends certification beyond one-dimensional paths to higher-dimensional algebraic varieties. By generalizing certified homotopy tracking to well-constrained varieties, we obtain a certified approximation of smooth real algebraic surfaces via coverings with interval boxes.
+
+Together, these results illustrate how numerical approximation with interval arithmetic reliably computes both discrete symmetries (Galois/monodromy groups) and continuous topology (algebraic surfaces). We conclude with a brief showcase of our Julia implementations.

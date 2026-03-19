@@ -1,0 +1,18 @@
+
+Title: Numerical Elimination and Parameter Space Exploration
+
+Speaker: Oskar Henriksson
+
+**Parametric polynomial systems** are ubiquitous in applied mathematics, and one is often interested in understanding how the number of real or positive solutions varies across the parameter space of a model. A key tool for studying such questions is the **discriminant variety**, which partitions the parameter space into regions with constant root counts. Symbolic techniques such as cylindrical algebraic decomposition (CAD) can then be used to obtain a complete characterization of these regions.
+
+However, in practice these symbolic approaches are often computationally very expensive. Even obtaining a defining equation for the discriminant variety via symbolic elimination can be highly challenging or infeasible for systems with only two or three variables, let alone computing a full CAD.
+
+When symbolic methods fail, we can instead turn to numerical ones. In this talk I will present a numerical approach to analyzing discriminant varieties and their complements that uses tools from **Numerical Algebraic Geometry** to circumvent the need for symbolic elimination and CAD. The key ingredients are *witness sets* (which represent a discriminant through its intersection with a generic line); *numerical irreducible decomposition* (which identifies which witness points belong to which component of the discriminant); and *gradient roadmaps* (which represents the complement through critical points of a certain Morse function that can be evaluated using witness set data).
+
+In my talk, I will give a brief introduction to these tools, explain how they are combined in our Julia package `ProjectedHypersurfaceRegions.jl`, and demonstrate how the package can be used to analyze the parameter spaces of some popular polynomial models in mathematical biology.
+
+This is joint work with Paul Breiding, John Cobb, Aviva Englander, Nayda Farnsworth, Jonathan Hauenstein, David Johnson, Jordy Lopez Garcia, and Deepak Mundayur.
+
+Paper: https://arxiv.org/pdf/2601.04383.
+
+Code: https://github.com/oskarhenriksson/ProjectedHypersurfaceRegions.jl (under development).

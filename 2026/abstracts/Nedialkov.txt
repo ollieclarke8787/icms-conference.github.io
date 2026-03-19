@@ -1,0 +1,12 @@
+
+Title: ADTAYL: Taylor Series, ODEs, and Lie Derivatives in MATLAB
+
+Speaker: Ned Nedialkov, McMaster University 
+
+We present ADTAYL, a MATLAB package consisting of two parts. The first, adtayl, is a class whose objects are arrays that behave like native MATLAB arrays, except that each array element is a one-variable Taylor series rather than a number. All operations are numerical, so this is automatic differentiation arithmetic rather than symbolic algebra. As with native arrays, operations are applied elementwise;  for example, applying standard functions produces the corresponding truncated Taylor expansions up to the chosen order, within roundoff error. The package provides a comprehensive set of elementwise standard functions.
+
+The second part is odets, an ODE solver whose interface matches MATLAB’s ODE suite as closely as possible, but which solves initial value problems by a Taylor series method. Subject to some restrictions, one can code an ODE problem for, say, ode45, and then switch to odets simply by changing the name of the solver. Taylor methods are especially effective at high accuracy. The solver can integrate in arbitrary-precision simply by providing the initial values in MATLAB’s variable-precision format vpa.
+
+The algorithms used in adtayl and odets are largely distinct. However, they collaborate—surprisingly elegantly—in the computation of high-order Lie derivatives of scalar and vector fields, which have important applications, for instance, in control theory.
+
+Joint work with John Pryce, Cardiff University, UK
