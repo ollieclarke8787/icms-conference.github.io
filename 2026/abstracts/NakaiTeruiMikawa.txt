@@ -1,0 +1,18 @@
+Title:
+
+Trajectory Planning and Certification for 3-DOF Robot Manipulators Using Real Quantifier Elimination Based on Comprehensive Gröbner Systems
+
+Authors:
+
+Yu Nakai (University of Tsukuba), 
+Akira Terui (University of Tsukuba),
+Masahiko Mikawa (University of Tsukuba)</li>
+
+Abstract:
+
+We propose an algorithm and present its implementation for trajectory planning and certification for 3-DOF robot manipulators. The method uses Real Quantifier Elimination (QE) based on Comprehensive Gröbner Systems (CGS), also known as the CGS-QE method.
+The main advantage of the proposed method is its efficiency in both trajectory planning and solution certification, enabled by the effective use of the CGS.
+First, in trajectory planning, we solve the inverse kinematics problem at each point along the trajectory via Gröbner basis computation. This typically requires calculating the Gröbner basis at every point, which is time-consuming. We prevent recomputation by computing the CGS for a parametric system, with the end-effector coordinates serving as parameters, thereby streamlining the algorithm.
+Second, for certification of solutions to the trajectory planning problem, the CGS-QE method shows that an inverse kinematics solution exists at any point along the end-effector's trajectory, given as parameters. The proposed method certifies solutions for trajectories represented by line segments and cubic natural splines.​
+The proposed method has been implemented using the computer algebra system Risa/Asir, and experimental results are presented.
+

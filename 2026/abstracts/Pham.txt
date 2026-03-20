@@ -1,0 +1,26 @@
+Title:
+
+WebAssembly for edge scientific computing: neural simulation and Xiangqi (chinese chess)
+
+
+Author:
+
+Martin D. Pham, Institution: Department of Computer Science, University of Toronto.
+
+
+Abstract:
+
+We present two applications of WebAssembly for browser-based sci-
+entific computing. We first present a comparison of the Brian library
+extension Brian2WASM to a Rust-based spiking neural network imple-
+mentation compiled to WebAssembly. We discuss the limitations to this
+approach and demonstrate some possible solutions using Rust closures.
+Secondly, we present a WebAssembly module for hyperdimensional com-
+puting on the Xiangqi (Chinese chess) board game. Hyperdimensional
+computing, sometimes called vector symbolic architectures, is a framework
+for representing data as algebraic operations in a high dimensional vector
+spaces (on the order of tens of thousands). We demonstrate preliminary
+results for board state encoding from Forsyth–Edwards notation and dis-
+cuss next steps for implementing a vector symbolic game engine/artificial
+player. Together, these two examples demonstrate how WebAssembly can
+be deployed on the browser for scientific computing.
