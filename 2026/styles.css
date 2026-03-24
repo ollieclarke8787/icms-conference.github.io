@@ -39,6 +39,14 @@ padding: 0 15px;
   color: lightgray;
 }
 
+details.talk-summary p {
+    font-size: 0.9em;      /* slightly smaller than normal */
+    margin-bottom: 0.75em; /* spacing between paragraphs */
+}
+details.talk-summary summary b {
+    color: #55b;  /* lighter than default */
+}
+
 .talk {
   font-weight: bold;
   font-style: italic;
