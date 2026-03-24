@@ -57,57 +57,183 @@
           <li>New computer algebra systems</li>
         </ul>
         <h3>Session Talks (as of March 18):</h3>
-                <ul>
-        <li><span class="talk">
-How Maple is Using AI to Boost Productivity
-        </span>
-Paul DeMarco
-        </li>
-        <li><span class="talk">
-Simplified Index Rules for Integrating Tensor Index Notation into Programming Languages with Static Type Systems
-        </span>
-Satoshi Egi
-        </li>
-        <li><span class="talk">
-Using a Machine Learning Model for Handwritten Digit Recognition in GeoGebra
-        </span>
-Mitsushi Fujimoto
-        </li>
-        <li><span class="talk">
-A Maple implementation of a parametric linear system solver using sparse rational function interpolation
-        </span>
-Michael Monagan, Mantej Sohki, Archit Srivastava.
-        </li>
-        <li><span class="talk">
-The Ax Computer Algebra System
-        </span>
-Roman Pearce
-        </li>
-        <li><span class="talk">
-Performance Profiling of Symbolic Simplification in SymPy: A Large-Scale Benchmark Study
-        </span>
-Jugpratap Singh
-        </li>
-        <li><span class="talk">
-        Accelerating the Factorization of Multilinear Boolean Polynomials
-        </span>
-        Tian Chen, Michael Monagan
-        </li>
-        <li><span class="talk">
-Implementing p-adic numbers in Macaulay2 using its foreign function interface and FLINT
-        </span>
-Douglas Torrance
-        </li>
-        <li><span class="talk">
-An Exploration of Word Encodings for Symbolic Language Runtimes
-        </span>
-Stephen M. Watt
-      </ul>
-      </div>
-    </section>
+        
+<details class="talk-summary"><summary><b>
+Accelerating the Factorization of Multilinear Boolean Polynomials
+</b><br/>
+Tian Chen, Michael Monagan (Simon Fraser U)
+</summary>
+<p>
+<b>Abstract</b>
+<a href="abstracts/Chen+.pdf">PDF</a>
+</p>
+</details>
 
-    <footer>
-      2026 ICMS | Wilfrid Laurier University and University of Waterloo
-    </footer>
-  </body>
+<details class="talk-summary"><summary><b>
+How Maple is Using AI to Boost Productivity
+</b><br/>
+Paul DeMarco (Maplesoft)
+</summary>
+<p>
+<b>Abstract</b>
+The latest version of Maple has introduced several AI-based features.  Central to these is the use of the Model Context Protocol (MCP) -- an open standard that allows AI models to seamlessly connect with external data sources, tools, and software.  Using MCP the AI can be taught to call a "tool", like Maple, when it needs to make a calculation.  While this improves the calculation ability exhibited in an AI response, it doesn't necessarily help with reasoning and repeatability.  We will explore how a user can interact with a LLM, having back-and forth dialogue in order to access features that help lessen the learning curve towards generating usable code and visualizations. We will also look at unique features that use AI to import math expressions from images or digitize entire hand-written documents in a format that is suitable for further computation and validation.
+</p>
+</details>
+
+<details class="talk-summary"><summary><b>
+Simplified Index Rules for Integrating Tensor Index Notation into Programming Languages with Static Type Systems
+</b><br/>
+Satoshi Egi (Rakuten Group, Inc)
+</summary>
+<p>
+<b>Abstract</b>
+Tensor index notation is indispensable in physics and differential geometry,
+but integrating it into programming languages has
+been difficult because index transformation rules are often complex and
+operator-specific. We present a systematic approach based on simplified,
+unified index rules, together with a classification of functions into scalar
+and tensor functions. Scalar functions, whose parameter types do not
+unify with tensor types, are automatically mapped element-wise to tensor
+arguments; tensor functions receive tensors directly and manipulate
+their structure, for example in tensor contraction. This classification is
+realized by Hindley-Milner (HM)-based type inference with type classes,
+a standard mechanism in functional programming languages that infers
+expression types automatically. As a result, the scalar/tensor distinction
+is determined without explicit type annotations, so users can define and
+use tensor operators without writing type annotations. Our index completion
+rules also handle tensors with omitted indices, enabling a unified
+treatment of differential forms. These rules let users define new tensor
+operators concisely without writing operator-specific index transformation
+logic. We demonstrate the approach in the Egison programming
+language, where programs closely follow mathematical expressions while
+preserving type safety.
+</p><p>
+<b>Keywords</b> tensor calculus · tensor index notation · differential forms ·
+type systems · Hindley-Milner type inference
+</p>
+</details>
+
+<details class="talk-summary"><summary><b>
+Using a Machine Learning Model for Handwritten Digit Recognition in GeoGebra
+</b><br/>
+Mitsushi Fujimoto (U Teacher Education Fukuoka)
+</summary>
+<p>
+<b>Abstract</b>
+Handwritten input can provide a natural and intuitive interface for interactive geometry
+software in educational settings. We describe implementation methods for recognizing
+handwritten digits in GeoGebra using a machine learning model. Targeting a PyTorch-based
+handwritten digit recognition model, we present two inference approaches: server-side
+inference with FastAPI and browser-side inference with ONNX Runtime Web. The FastAPI
+approach is well-suited for rapid prototyping as it allows the trained model to be served
+directly from the Python/PyTorch environment via a Web API. In contrast, the ONNX approach
+completes inference entirely within a web browser, requiring neither a server nor a Python
+environment, and thus excels in ease of deployment and execution. Furthermore, we conducted
+a comparative experiment on inference speed across three configurations: FastAPI, ONNX with
+WebAssembly, and ONNX with WebGPU, confirming that ONNX with WebAssembly achieves the fastest
+inference for a small-scale model. By leveraging this inference infrastructure, we also
+implemented a feature that automatically resizes a triangle so that its side ratios match
+the handwritten digits entered beside each side. This demonstrates the potential of the
+approach for supporting geometry education.
+</p>
+</details>
+
+<details class="talk-summary"><summary><b>
+A Maple implementation of a parametric linear system solver using sparse rational function interpolation
+</b><br/>
+Michael Monagan, Mantej Sohki, Archit Srivastava (Simon Fraser U)
+</summary>
+<p>
+<b>Abstract</b>
+<a href="abstracts/Monagan+.pdf">PDF</a>
+</p>
+</details>
+
+<details class="talk-summary"><summary><b>
+The Ax Computer Algebra System
+</b><br/>
+Roman Pearce (Crow Computing)
+</summary>
+<p>
+<b>Abstract</b>
+We describe the design of the Ax computer algebra system
+located online at axcas.net. The system has arbitrary precision integers,
+rationals, and floating point numbers, with immediate representations for
+small instances of all three. It automatically simplifies vectors to a sparse
+format, which is inherited by matrices and higher dimensional objects.
+Polynomials are supported with a sum-of-products data structure which
+is simplified to a sparse representation with packed exponents. Ax has
+modular algorithms for polynomials and matrices based on 63-bit primes,
+including a high performance Groebner basis engine which is released into
+the public domain. The system has a mark-and-sweep garbage collector
+and allocates data from slabs for dags of particular sizes. The language
+is similar to C and Javascript, but with automatic memoization. At this
+point the system should be considered experimental.
+</p>
+</details>
+
+<details class="talk-summary"><summary><b>
+Performance Profiling of Symbolic Simplification in SymPy: A Large-Scale Benchmark Study
+</b><br/>
+Jugpratap Singh (Amity U)
+</summary>
+<p>
+<b>Abstract</b>
+Symbolic simplification is one of the most computationally intensive operations in
+computer algebra systems (CAS), yet its relationship to expression structure remains
+poorly characterized. In this paper, we present a systematic empirical study of the
+runtime performance of sympy.simplify() — the primary simplification interface of
+SymPy, a widely used open-source CAS implemented in Python. We construct a
+benchmark corpus of symbolic expressions drawn from published datasets including
+the AI Feynman database (Udrescu & Tegmark, 2020) and the Symbolic Mathematics
+dataset (Lample & Charton, 2020), spanning diverse mathematical domains including
+physics equations, calculus expressions, and dynamical systems. For each expression, we compute five structural metrics, including the expression tree size (number of
+nodes in the AST), depth, operation count, symbol count, and average simplification
+time. We carefully measure the average simplification time over multiple runs with
+warm-up and statistical outlier removal to minimize the effects of CPU noise and
+caching. We further analyze the correlation between these structural features and
+simplification costs to determine the key factors that most influence the complexity
+of symbolic simplification in SymPy. Our results provide insights into the
+performance bottlenecks of symbolic simplification and offer guidance for future
+optimization of CAS design and implementation.This work contributes to the
+understand how data representation and expression complexity affect symbolic
+computation performance, with implications for the design and optimization of
+computer algebra systems.
+</p>
+</details>
+
+<details class="talk-summary"><summary><b>
+Implementing p-adic numbers in Macaulay2 using its foreign function interface and FLINT
+</b><br/>
+Douglas Torrance (Piedmont U)
+</summary>
+<p>
+<b>Abstract</b>
+Macaulay2 is a computer algebra platform widely used by researchers in algebraic geometry and commutative algebra.  Using the ForeignFunctions package, it is possible to make calls from Macaulay2 to dynamic libraries such as FLINT.  We demonstrate this by introducing a new Macaulay2 package implementing p-adic numbers using FLINT via this interface.  We discuss implementation details such as memory allocation, interaction with Macaulay2’s garbage collector, and object-oriented design decisions that mirror the existing implementations of the real and complex number fields in Macaulay2.
+</p>
+</details>
+
+<details class="talk-summary"><summary><b>
+An Exploration of Word Encodings for Symbolic Language Runtimes
+</b><br/>
+Stephen M. Watt (U Waterloo
+</summary>
+<p>
+<b>Abstract</b>
+Current computing platforms have largely standardized on wide machine words, typically 64 bits, with established conventions for representing pointers, integers, and floating-point values. Within this setting, techniques such as low-order-bit tagging and NaN-boxing have been used to encode type information efficiently in language runtimes. These approaches, however, interact in subtle ways with architectural constraints, including canonical address formats and evolving virtual memory models, and these interactions have significant impact on symbolic computing systems.
+</p><p>
+This talk examines representations in a setting where pointers, integers, and floating-point values coexist within a tagged framework. We focus on the trade-offs involved in tagging schemes, especially when aiming to preserve faithful NaN-boxing, and analyze how the available bit budget is divided among payload, type information, and architectural requirements. Constraints arising from canonical pointer formats, for example, can influence tagging strategies and the effective granularity of addressable memory.
+</p><p>
+Within the same framework, we also consider big integer arithmetic where digit size is treated as a parameter rather than a fixed constant. This introduces separate but related questions concerning carry propagation and efficiency, including the use of multi-word operations and parallel architectures.
+</p><p>
+The goal is to explore this design space in a technically grounded way, clarifying the interactions and trade-offs that arise when combining tagged representations with flexible arithmetic in practical systems.
+</p>
+</details>
+</div>
+</section>
+
+<footer>
+2026 ICMS | Wilfrid Laurier University and University of Waterloo
+</footer>
+</body>
 </html>
