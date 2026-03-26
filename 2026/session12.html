@@ -44,7 +44,132 @@ In the session we aim to highlight many of the common research themes between th
 
 
         <h3>Session Talks:</h3>
-        tba
+
+<details>
+<summary><b>	
+Tropical k-means clustering for phylogenetic trees
+  </b><br>
+Lena Weis
+</summary>
+<p style="padding-top:1em">  
+Abstract: The tropical asymmetric distance is a quasi-metric on the
+n-dimensional tropical torus and in in particular on the Bergman fan
+\mathcal{B}(K_N) of the complete graphical matroid on N elements such
+that n is equal to N choose 2. Using the correspondence between Bergman
+fan \mathcal{B}(K_N) and the space of equidistance trees with N leaves
+it gives rise to a consensus method, called tropical median consensus,
+which unifies multiple phylogenetic trees into one. In this talk, I will
+present and analyse a clustering algorithm for equidistant phylogenetic
+trees based on the tropical median consensus.
+</p>
+</details></br>
+
+<details>
+  <summary><b>
+The EuclideanDistanceDegree package for Macaulay2
+   </b><br>
+    Will Huang
+</summary>
+<p style="padding-top:1em">  
+Abstract : One of the most well studied invariants in algebraic optimization is the Euclidean distance degree. The ED degree provides a measure of complexity of measuring nearest point problems to real algebraic varieties. Here, we introduce the EuclideanDistanceDegree package for Macaulay2 which provides several approaches for computing these degrees. This includes symbolic methods involving multidegrees as well as functions using probabilistic methods. In addition, we provide numerical methods for computing ED degrees, generic ED degrees, and ED degree defects that rely on homotopy continuation from numerical algebraic geometry. We provide a host of test cases that also serve as benchmarks.
+</p>
+</details></br>
+
+<details>
+<summary><b>
+ The strong exchange property for Coxeter matroids
+  </b><br>
+  Aram Dermenjian
+</summary>
+<p style="padding-top:1em">  
+Abstract: Matroids are a combinatorial structure that abstracts linear independence. They have a deep connection with Grassmannians, the variety of subspaces of a vector space cut out by the Plücker equations. Grassmannians and matroids are inherently 'type A' objects and have generalizations to other root systems giving rise to what is known as Coxeter matroids. As such, one can generalize (through representation theory) these Grassmannians and Plücker equations to other Coxeter types using miniscule varieties and equations that define the quotient G/P of a simply connected complex Lie Group G by a maximal parabolic subgroup P with a miniscule fundamental representation. In addition, Borovik, Gelfand and White give a description of a strong exchange property for Coxeter matroids. It turns out there is a strong link between the strong exchange property and the tropicalization of the equations that define G/P. In this talk, we describe this link through representation theory, tropical geometry and polytope theory. (This is joint work with Kieran Calvert, Alex Fink and Ben Smith).
+</p>
+</details></br>
+
+<details>
+  <summary><b>
+ Matroids, Incidence Theorems, and Tilings
+  </b><br>Lukas Kühne
+</summary>
+<p style="padding-top:1em">  
+Abstract : A matroid is a fundamental and actively studied object in combinatorics. Matroids generalize linear independence in vector spaces as well as many aspects of graph theory. After a short introduction to matroids, I will present parts of a new OSCAR module for matroids through several examples. I will focus on computing the moduli space of a matroid, which is the space of all arrangements of hyperplanes with that matroid as their intersection lattice.
+
+
+Fomin and Pylyavskyy describe how to obtain incidence theorems from tilings of an orientable surface; they call this result the "master theorem." Since most classically known incidence theorems, such as Pappus’s and Desargues’s theorems, are instances of the master theorem, they ask whether this holds for all incidence theorems. As an application of the presented OSCAR module, we provide an explicit example of an incidence theorem involving 13 points, based on a matroid with an exotic moduli space, that is not an instance of the master theorem.
+</p>
+</details></br>
+
+<details>
+<summary><b>
+ Fast isotopy computation for combinatorial patchworks
+  </b><br>
+  Michael Joswig
+</summary>
+<p style="padding-top:1em">  
+Abstract: Viro’s patchworking theorem produces real plane algebraic
+curves of degree d from a regular unimodular triangulation of d · ∆2
+together with a sign assignment on the vertices of the triangulation.
+The topological type of the real scheme of the resulting curve is en-
+coded in this combinatorial data alone, but extracting it efficiently is
+nontrivial. We describe a fast algorithm for this task. Given the trian-
+gulation and sign assignment, the algorithm determines the real scheme
+by a purely combinatorial procedure on the reflected signed triangula-
+tion: connected components are identified via union-find, regions through
+antipodal boundary identifications, and the nesting tree of ovals by a
+breadth-first traversal of the region adjacency graph. This avoids cell
+complex constructions or homology computations required by earlier
+approaches. The algorithm is implemented in C++ and Rust; its effi-
+ciency was essenti1al for the recent exhaustive verification that all 121
+real schemes of degree seven are realizable as T-curves (real algebraic
+curves produced by Viro patchworking), which required classifying bil-
+lions of sign distributions per triangulation.
+
+Joint work with:Zoe Geiselmann, Michael Joswig, Lars Kastner, Konrad Mundinger,
+Sebastian Pokutta, Christoph Spiegel, Marcel Wack, and Max Zimmer
+</p>
+</details></br>
+
+<details>
+  <summary><b>
+ Enumeration of Coherent Matching Fields Modulo Symmetry
+    </b><br>
+    Yiyuan Chen
+</summary>
+<p style="padding-top:1em">  
+Abstract: Coherent matching fields, introduced by Sturmfels and Zelevinsky (1993),
+play an important role in the study of the Grassmannian and its tropical
+counterpart. They can be described as the vertices of a Minkowski sum of
+Birkhoff polytopes associated with the maximal minors of a $r \times n$
+matrix.
+
+We present an algorithm for enumerating coherent matching fields modulo
+the action of the symmetric group permuting the columns of the matrix.
+Our approach adapts the reverse search method of Avis and Fukuda (1992)
+to enumerate the orbits of the vertices of a polytope under a symmetry
+group. We further show how the shadow-vertex rule can be used to perform
+inexpensive pivots between coherent matching fields.
+
+We implemented this algorithm in Rust with distributed parallelization
+using MPI. This implementation allowed us to enumerate the 5,323,644
+coherent matching fields of rank $r=3$ with $n=9$ columns (modulo column
+permutations). As a consequence, we show that there exist generic
+configurations of nine points in $\mathbb{R}^2$ whose order type cannot
+be realized by generic configurations of tropical points, highlighting a
+new discrepancy between classical and tropical realizability.
+</p>
+</details></br>
+
+<details>
+<summary><b>
+ Computing all minimal Markov Bases
+  </b><br>
+  Alex Milner
+</summary>
+<p style="padding-top:1em">  
+Abstract: From a statistical standpoint, Markov bases serve as a way to construct a connected Markov chain for performing conditional tests of a discrete exponential family. However, from an algebraic point of view, a Markov basis is simply a generating set of a toric ideal. In this talk, we will introduce the package AllMarkovBases for Macaulay2, which computes all Markov bases, which are minimal with respect to inclusion, of a given toric ideal. The package builds on the functionality of 4ti2 by producing the fiber graphs of the toric ideal corresponding to generating fibers. The package then uses these graphs to compute properties of the toric ideal such as its indispensable set of binomials as well as its universal Markov basis. In addition, the fiber graphs can be used to randomly sample from the set of minimal Markov bases and count the number of minimal Markov bases without computing them all explicitly.
+</p>
+</details>
+
       </div>
     </section>
 
