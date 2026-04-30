@@ -1,7 +1,7 @@
 
 Title: Parallel Certification of Roots of Polynomial Systems
 
-Authors: David Johnson and Taylor Brysiewicz
+Authors: Paul Breiding, David Johnson and Taylor Brysiewicz
 
 Abstract:
 
