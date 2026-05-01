@@ -25,7 +25,8 @@ img {
 }
 
 td {
-padding: 0 15px;
+  padding: 0 15px;
+  vertical-align: top;
 }
 
 .container {
